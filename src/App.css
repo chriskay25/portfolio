@@ -4,6 +4,20 @@
     padding: 0;
   }
 
-  html, body {
+html, body {
       height: 100%;
-  }
+}
+
+:root {
+    --dark: #1e292f;
+    --orange: #eaa05b;
+    --yellow: #eae85b;
+    --red: #ea5b5d;
+    --green: #5beaa0;
+    --blue: #5ba5ea;
+}
+
+.App {
+    height: 100vh;
+    background-color: var(--dark);
+}

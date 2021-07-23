@@ -13,8 +13,8 @@ const Intro = () => {
             </Column>
             <Column>
                 <div className='intro-description'>
-                    <h2 style={{fontFamily: 'Montserrat'}}>Full Stack Developer</h2>
-                    <p style={{fontFamily: 'Manjari'}}>
+                    <h2>Full Stack Developer</h2>
+                    <p>
                         Hello! My name is Chris Kay and I'm a full stack software engineer with a passion for technology.
                         I'm interested in finding a position as a junior developer at a company where I can learn and grow
                         as an engineer. 

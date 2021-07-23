@@ -1,4 +1,4 @@
-import dev from '../dev-png-5.png'
+import dev from '../dev-png-6.png'
 
 const Avatar = () => {
     return (

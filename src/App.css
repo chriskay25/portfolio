@@ -9,6 +9,24 @@ html, body {
       width: 100%;
 }
 
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 55s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 :root {
     --dark: #1e292f;
     --orange: #eaa05b;
@@ -38,7 +56,9 @@ p, span, ul {
     min-height: 100vh;
     height: 100%;
     width: 100%;
+    max-width: 1500px;
     background-color: var(--dark);
+    margin:0 auto;
 }
 
 .column {
@@ -115,8 +135,30 @@ p, span, ul {
 
 .number-large + div {
     display: inline-block;
-    width: 140px;
+    width: 120px;
     font-size: 16px;
+}
+
+.skills-tech ul {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+}
+
+.skills-tech li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    padding: 10px;
+}
+
+.skills-tech img {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
 }
 
 

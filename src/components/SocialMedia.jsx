@@ -1,5 +1,5 @@
-import liLogo from '../linkedin-32.png'
-import ghLogo from '../gh-light-sm.png'
+import liLogo from '../assets/linkedin-32.png'
+import ghLogo from '../assets/gh-light-sm.png'
 
 const SocialMedia = () => {
     return (

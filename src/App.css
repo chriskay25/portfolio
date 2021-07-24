@@ -21,11 +21,15 @@ html, body {
     --text-font: 'Manjari';
 }
 
+div {
+    font-family: var(--text-font);
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--header-font);
 }
 
-p {
+p, span, ul {
     margin: 15px 0;
     font-family: var(--text-font);
 }
@@ -44,7 +48,9 @@ p {
     overflow: hidden;
 }
 
-.intro {
+/* INTRO */
+
+.intro, .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -88,6 +94,29 @@ p {
     height: 20px;
     width: 20px;
     color: white;
+}
+
+/* SKILLS */
+
+.skills {
+    background-color: #000;
+    color: #fff;
+}
+
+.skills-experience-container {
+    display: inline-block;
+}
+
+.number-large {
+    color: var(--red);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.number-large + div {
+    display: inline-block;
+    width: 140px;
+    font-size: 16px;
 }
 
 

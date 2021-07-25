@@ -47,9 +47,18 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--header-font);
 }
 
-p, span, ul {
-    margin: 15px 0;
+p, span {
+    padding: 15px 0;
     font-family: var(--text-font);
+}
+
+ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+li {
+    padding: 3px;
 }
 
 .App {
@@ -78,7 +87,7 @@ p, span, ul {
     height: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .column {
       width: 100%;
 }
@@ -141,10 +150,9 @@ p, span, ul {
 
 .skills-tech ul {
     list-style: none;
-    padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    width: 325px;
+    width: 100%;
 }
 
 .skills-tech li {
@@ -159,6 +167,10 @@ p, span, ul {
     height: 40px;
     width: 40px;
     margin-top: 5px;
+}
+
+.proficiencies {
+    padding: 20px 0;
 }
 
 

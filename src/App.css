@@ -35,21 +35,22 @@ body {
     --red: #ea5b5d;
     --green: #5beaa0;
     --blue: #5ba5ea;
+    --grey: rgb(165, 165, 165);
     --header-font: 'Montserrat';
     --text-font: 'Manjari';
 }
 
-div {
-    font-family: var(--text-font);
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--header-font);
+    color: #fff;
 }
 
-p, span {
-    padding: 15px 0;
+div, p, span {
     font-family: var(--text-font);
+} 
+
+p {
+    color: var(--grey);
 }
 
 ul {
@@ -79,7 +80,7 @@ li {
 
 /* INTRO */
 
-.intro, .skills {
+.intro, .skills, .projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,6 +117,10 @@ li {
     justify-content: center;
     width: 90%;
     max-width: 600px;
+}
+
+.intro-description p {
+    margin: 25px 0;
 }
 
 .social-media img {
@@ -171,6 +176,39 @@ li {
 
 .proficiencies {
     padding: 20px 0;
+    color: var(--grey);
 }
 
+/* PROJECTS */
+
+.projects-container {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.projects-header {
+    text-align: center; 
+    font-size: 30px;
+}
+
+.projects h3 {
+    color: var(--red);
+    margin-bottom: 8px;;
+}
+
+.project-container {
+    margin-bottom: 50px;
+    min-height: 100px;
+}
+
+.project-description {
+    padding: 14px;
+    background-color: darkslategray;
+    color: var(--grey);
+    border-radius: 5px;
+}
+
+.project-description p {
+    padding: 5px 0;
+}
 

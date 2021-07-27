@@ -19,7 +19,6 @@ const Intro = () => {
                         I'm interested in finding a position as a junior developer at a company where I can learn and grow
                         as an engineer. 
                     </p>
-                    <button>My Resume</button>
                 </div>
             </Column>
         </div>

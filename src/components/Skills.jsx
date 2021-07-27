@@ -52,11 +52,14 @@ const Skills = () => {
             </Column>
             <Column>
                 <div className='proficiencies'>
-                    <h3>Other Proficiencies</h3>
+                    <h3>Relevant Skills & Knowledge</h3>
                     <ul>
                         <li>MVC Frameworks</li>
+                        <li>Object Oriented Programming</li>
                         <li>SQL Databases (Sqlite and Postgress)</li>
+                        <li>Authentication (Rails, JWT's, OAuth)</li>
                         <li>APIs</li>
+                        <li>JSON</li>
                         <li>Git</li>
                         <li>Thunk</li>
                     </ul>

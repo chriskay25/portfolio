@@ -3,7 +3,7 @@ import Column from './Column'
 const Projects = () => {
     return (
         <div className='projects-container'>
-            <h2 className='projects-title'>PROJECTS</h2>
+            <h2 className='projects-header'>Personal Projects</h2>
             <div className='projects'>
                 <Column>
                     <div className='project-container'>

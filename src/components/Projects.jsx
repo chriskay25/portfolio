@@ -1,5 +1,8 @@
 import Column from './Column'
 import cliImg from '../assets/cheers-screenshot (2).png'
+import jukeImg from '../assets/juke-2.png'
+import flashImg from '../assets/flash-1.png'
+import bucketImg from '../assets/bucket-list-1.png'
 
 const Projects = () => {
     return (
@@ -21,7 +24,9 @@ const Projects = () => {
                         </div>
                     </Column>
                     <Column>
-                        
+                        <div className='project-example'>
+                            <img src={jukeImg} alt='juke' />
+                        </div>
                     </Column>
                 </div>
                 <div className='project'>
@@ -39,8 +44,10 @@ const Projects = () => {
                         </div>
                     </Column>
                     <Column>
-                    
-                    </Column>
+                        <div className='project-example'>
+                                <img src={flashImg} alt='juke' />
+                            </div>
+                        </Column>
                 </div>
                 <div className='project'>
                     <Column>
@@ -67,14 +74,15 @@ const Projects = () => {
                                 <p><b>Frontend:</b> Embedded Ruby (ERB) & CSS</p>
                                 <p><b>Backend:</b> Sinatra</p>
                                 <p>
-                                    A web app that lets users track and remember things activities
-                                    and destinations that are on their bucket list.
+                                    A web app that lets users track and remember travel destinations that are on their bucket list.
                                 </p>
                             </div>
                         </div>
                     </Column>
                     <Column>
-                    
+                        <div className='project-example'>
+                            <img id='bucket-list' src={bucketImg} alt='bucket list' />
+                        </div>
                     </Column>
                 </div>
                 <div className='project'>
@@ -90,7 +98,7 @@ const Projects = () => {
                         </div>
                     </Column>
                     <Column>
-                        <div className='project-container'>
+                        <div className='project-example'>
                             <img src={cliImg} alt='cli' />
                         </div>
                     </Column>

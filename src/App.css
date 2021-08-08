@@ -210,6 +210,17 @@ li {
 .project-container {
     margin-bottom: 30px;
     min-height: 100px;
+    position: relative;
+}
+
+.project-gh {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    filter: brightness(.6);
 }
 
 .project-description {
@@ -287,4 +298,9 @@ text {
 #bucket-list {
     width: 170px;
     height: 330px;
+}
+
+#notepod {
+    width: 220px;
+    height: 315px;
 }

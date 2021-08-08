@@ -159,14 +159,14 @@ li {
     font-size: 16px;
 }
 
-.skills-tech ul {
+.stack ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.skills-tech li {
+.stack li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +174,7 @@ li {
     padding: 10px;
 }
 
-.skills-tech img {
+.stack img {
     height: 40px;
     width: 40px;
     margin-top: 5px;
@@ -188,7 +188,7 @@ li {
 /* PROJECTS */
 
 .projects-container {
-    margin-top: 30px;
+    margin-top: 60px;
     color: #fff;
 }
 

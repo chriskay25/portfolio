@@ -4,9 +4,13 @@
     padding: 0;
   }
 
+html {
+    font-size: 16px;
+}
+
 html, body {
-      height: 100%;
-      width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -69,6 +73,7 @@ li {
     max-width: 1200px;
     background-color: var(--dark);
     margin:0 auto;
+    overflow: hidden;
 }
 
 .column {
@@ -88,19 +93,9 @@ li {
     height: 100%;
 }
 
-@media screen and (max-width: 800px) {
-    .column {
-      width: 100%;
-}
-    .intro {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-}
-
 .name {
     font-family: var(--header-font);
-    font-size: 60px;
+    font-size: 4rem;
 }
 
 .avatar {
@@ -141,22 +136,8 @@ li {
 .skills {
     background-color: #000;
     color: #fff;
-}
-
-.skills-experience-container {
-    display: inline-block;
-}
-
-.number-large {
-    color: var(--red);
-    font-size: 50px;
-    font-weight: 800;
-}
-
-.number-large + div {
-    display: inline-block;
-    width: 120px;
-    font-size: 16px;
+    box-shadow: 0 0px 14px 10px var(--red);
+    padding-bottom: 4rem;
 }
 
 .stack ul {
@@ -185,10 +166,49 @@ li {
     color: var(--grey);
 }
 
+/* EXPERIENCE */
+
+.experience {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-60%);
+}
+
+.experience-container {
+    margin: 0 2rem;
+    background-color: rgb(110, 104, 104);
+    width: 200px;
+    border-radius: 4px;
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.number-large {
+    /* display: inline-block; */
+    font-family: Cinzel;
+    color: var(--red);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-right: 1rem;
+}
+
+.number-large + span {
+    /* display: inline-block; */
+    color: white;
+    font-size: 1.1rem;
+    max-width: 85px;
+}
+
 /* PROJECTS */
 
 .projects-container {
-    margin-top: 60px;
+    margin-top: 10px;
     color: #fff;
 }
 
@@ -205,6 +225,7 @@ li {
 .project {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project-container {
@@ -303,4 +324,36 @@ text {
 #notepod {
     width: 220px;
     height: 315px;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    .column {
+      width: 100%;
+    }
+    .intro {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .experience-container {
+        margin: 0 1rem;
+        
+    }
+    .number-large + span {
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .experience-content {
+        padding: 1rem 0rem;
+    }
+    .number-large {
+        font-size: 2.5rem;
+    }
+    .number-large + span {
+        font-size: 13px;
+    }
 }

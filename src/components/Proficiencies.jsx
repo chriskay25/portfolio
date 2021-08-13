@@ -5,7 +5,7 @@ const Proficiencies = () => {
             <ul>
                 <li>MVC Frameworks</li>
                 <li>Object Oriented Programming</li>
-                <li>SQL Databases (Sqlite and Postgress)</li>
+                <li>SQL Databases (Sqlite & Postgress)</li>
                 <li>Authentication (Rails, JWT's, OAuth)</li>
                 <li>Single Page Applications</li>
                 <li>RESTful Applications</li>

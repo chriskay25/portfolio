@@ -1,7 +1,13 @@
 import SocialMedia from './SocialMedia'
 import { HiOutlineMail } from 'react-icons/hi'
+import { motion, useViewportScroll, useTransform } from 'framer-motion'
 
 const Footer = () => {
+    const { scrollYProgress } = useViewportScroll()
+    const pathLength = useTransform(scrollYProgress, [.98, 1], [0, 1])
+    const hexColor = useTransform(scrollYProgress, [.98, 1], ['#fff', '#ea5b5d'])
+    const fillColor = useTransform(scrollYProgress, [.99, 1], ['#000', '#333'])
+
     return (
         <div className='footer'>
             <div className='contact-me'>
@@ -14,10 +20,12 @@ const Footer = () => {
 
             <div style={{height: '70px', display: 'flex', justifyContent: 'center'}}>
                 <svg height='60px' width='60px'>
-                    <polygon points='30 5, 5 20, 5 40, 30 55, 55 40, 55 20'
+                    <motion.path d='M30 5, 5 20, 5 40, 30 55, 55 40, 55 20, 30 5'
                         stroke='var(--red)'
-                        strokeWidth='3px' />
-                    <text x='50%' y='50%' style={{transform: 'translate(-14px, 6px'}}>
+                        strokeWidth='3px' 
+                        style={{pathLength: pathLength, stroke: hexColor, fill: fillColor}}
+                    />
+                    <text x='50%' y='50%' style={{transform: 'translate(-14px, 7px'}}>
                         CK
                     </text>
                 </svg>

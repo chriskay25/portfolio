@@ -175,6 +175,7 @@ li {
 }
 
 .selected-card {
+    font-size: clamp(14px, 2.2vw, 1.5rem); /* (MIN, VAL, MAX) */
     padding: 1rem;
     border-radius: 5px;
     background-color: rgb(167, 143, 143);
@@ -187,18 +188,18 @@ li {
 }
 
 .selected-card span {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .selected-card img {
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
     margin-right: 1rem;
 }
 
 .selected-card div {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .proficiencies {
@@ -369,9 +370,6 @@ text {
     .skills {
         padding-bottom: 3rem;
     }
-    .selected-card div {
-        font-size: 13px;
-    }
     .experience-content {
         padding: 1rem 0rem;
     }
@@ -386,9 +384,6 @@ text {
 @media screen and (max-width: 800px) {
     html {
         font-size: 14px;
-    }
-    .selected-card div {
-        font-size: 15px;
     }
     .experience-container {
         margin: 0 1rem;

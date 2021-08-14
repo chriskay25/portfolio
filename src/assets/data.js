@@ -20,7 +20,7 @@ const stackData = [
         name: 'Rails',
         img: railsLogo,
         alt: 'rails logo',
-        description: "Rails is a framework for developing web applications. Valuing convention over configuration makes the framework easier to understand and navigate for newcomers and experienced developers. Ruby and Rails have a dedicated following and a very active community, which is the main reason they're still popular today."
+        description: "Rails is a framework for developing web applications. Ruby and Rails have a dedicated following and a very active community, which is a big reason they're still popular today."
     },
     {
         id: 3,
@@ -48,14 +48,14 @@ const stackData = [
         name: 'Node.js',
         img: nodeLogo,
         alt: 'node logo',
-        description: "Node.js is a free, open source server environment. It runs single-threaded, non-blocking, asynchronus programming, making it very memory efficient. Node.js allows developers to run JavaScript on the server. Due to its ease of use, npm has helped the Node.js ecosystem to proliferate."
+        description: "Node.js is a free, open source server environment. Node.js allows developers to run JavaScript on the server. Due to its ease of use, npm has helped the Node.js ecosystem to proliferate."
     },
     {
         id: 7,
         name: 'CSS',
         img: cssLogo,
         alt: 'css logo',
-        description: "CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the web, alongside JavaScript and HTML."
+        description: "CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the web, alongside JS and HTML."
     },
     {
         id: 8,

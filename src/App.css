@@ -148,6 +148,7 @@ li {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    max-width: 450px;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -175,16 +176,17 @@ li {
 }
 
 .selected-card {
-    font-size: clamp(14px, 2.2vw, 1.5rem); /* (MIN, VAL, MAX) */
+    font-size: clamp(14px, 2.2vw, 1.4rem); /* (MIN, VAL, MAX) */
     padding: 1rem;
     border-radius: 5px;
     background-color: rgb(167, 143, 143);
     background-color: rgb(134, 125, 125);
-    height: 100%;
+    height: fit-content;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
+    z-index: 1;
 }
 
 .selected-card span {

@@ -18,11 +18,11 @@ const Stack = () => {
         <div className='stack'>
             <h2>My Software Stack</h2>
             <AnimateSharedLayout type='crossfade'>
-                <motion.ul animate={selected ? {blur: '4px'} : {blur: 0}} layout>
+                <motion.ul layout>
                     {data.map((item) => (
-                        <li key={item.id} onClick={() => handleSelected(item.id)}>
+                        <motion.li key={item.id} onClick={() => handleSelected(item.id)} animate={selected && selected !== item.id ? {opacity: 0} : {opacity: 1}}>
                             <Card key={item.id} item={item} selected={selected === item.id} />
-                        </li>
+                        </motion.li>
                     ))}
                 </motion.ul>
             </AnimateSharedLayout>

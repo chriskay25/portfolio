@@ -95,7 +95,17 @@ li {
 
 .name {
     font-family: var(--header-font);
-    font-size: 4rem;
+    font-size: 3.5rem;
+    position: relative;
+    max-width:fit-content;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    background: var(--red);
+    position: relative;
+    bottom: 5px;
 }
 
 .avatar {
@@ -103,7 +113,7 @@ li {
     justify-content: center;
     margin: 30px 0;
     object-fit: scale-down;
-    filter: drop-shadow(-4px 4px 5px black);
+    filter: drop-shadow(0px 5px 20px black);
 }
 
 .intro-description {
@@ -136,7 +146,6 @@ li {
 .skills {
     background-color: #000;
     color: #fff;
-    box-shadow: 0 0px 14px 10px var(--red);
     padding-bottom: 6rem;
 }
 

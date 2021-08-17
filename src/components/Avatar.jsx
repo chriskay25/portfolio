@@ -1,10 +1,11 @@
-import dev from '../assets/dev-png-6.png'
+import dev from '../assets/avatar.png'
+import { motion } from 'framer-motion'
 
 const Avatar = () => {
     return (
-        <div className='avatar'>
+        <motion.div className='avatar' initial={{opacity: 0, scale: .8}} animate={{opacity: 1, scale: 1}} transition={{delay: 0.3, duration: 1}}>
             <img src={dev} alt='dev-png' />
-        </div>
+        </motion.div>
     )
 }
 

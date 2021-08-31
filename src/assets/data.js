@@ -6,6 +6,7 @@ import htmlLogo from './html-logo.png'
 import nodeLogo from './node-logo-3.png'
 import reactLogo from './react-logo.png'
 import reduxLogo from './redux-logo.png'
+import pythonLogo from './python_logo.png'
 
 const stackData = [
     {
@@ -31,34 +32,41 @@ const stackData = [
     },
     {
         id: 4,
+        name: 'Python',
+        img: pythonLogo,
+        alt: 'python logo',
+        description: "Known best for its use in machine learning and AI development, Python is a high-level general-purpose programming language with a design philosophy that emphasizes code readability."
+    },
+    {
+        id: 5,
         name: 'React',
         img: reactLogo,
         alt: 'react logo',
         description: "React is a free and open-source front-end JavaScript library developed by Facebook. It allows developers to build user interfaces with reusable components written in JSX (a mixture of JavaScript and HTML)."
     },
     {
-        id: 5,
+        id: 6,
         name: 'Redux',
         img: reduxLogo,
         alt: 'redux logo',
         description: "Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React for building user interfaces. The main benefit of using Redux is centralizing an application's state and logic."
     },
     {
-        id: 6,
+        id: 7,
         name: 'Node.js',
         img: nodeLogo,
         alt: 'node logo',
         description: "Node.js is a free, open source server environment. Node.js allows developers to run JavaScript on the server. Due to its ease of use, npm has helped the Node.js ecosystem to proliferate."
     },
     {
-        id: 7,
+        id: 8,
         name: 'CSS',
         img: cssLogo,
         alt: 'css logo',
         description: "CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the web, alongside JS and HTML."
     },
     {
-        id: 8,
+        id: 9,
         name: 'HTML',
         img: htmlLogo,
         alt: 'html logo',

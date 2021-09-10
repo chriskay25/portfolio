@@ -16,7 +16,7 @@ const Stack = () => {
 
     return (
         <div className='stack'>
-            <h2>My Software Stack</h2>
+            <h2>MY LANGUAGES & FRAMEWORKS</h2>
             <AnimateSharedLayout type='crossfade'>
                 <motion.ul layout>
                     {data.map((item) => (

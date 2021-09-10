@@ -30,7 +30,7 @@ const Intro = () => {
             </Column>
             <Column>
                 <div className='intro-description'>
-                    <motion.h2 initial='initial' animate='animated' variants={item} custom='1.1'>Full Stack Developer</motion.h2>
+                    <motion.h2 initial='initial' animate='animated' variants={item} custom='1.1'>FULL STACK DEVELOPER</motion.h2>
                     <motion.p initial='initial' animate='animated' variants={item} custom='1.3'>
                         Hello! My name is Chris Kay and I'm a full stack software engineer with a passion for technology.
                         I'm interested in finding a position as a junior developer at a company where I can learn from more experienced engineers and improve and expand my skillset. 

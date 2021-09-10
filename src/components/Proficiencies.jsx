@@ -1,13 +1,13 @@
 const Proficiencies = () => {
     return (
         <div className='proficiencies'>
-            <h3>Relevant Skills & Knowledge</h3>
+            <h2>RELEVANT SKILLS & KNOWLEDGE</h2>
             <ul>
-                <li>MVC Frameworks</li>
                 <li>Object Oriented Programming</li>
                 <li>SQL Databases (Sqlite & Postgress)</li>
                 <li>Authentication (Rails, JWT's, OAuth)</li>
                 <li>Single Page Applications</li>
+                <li>MVC Frameworks</li>
                 <li>RESTful Applications</li>
                 <li>APIs</li>
                 <li>JSON</li>

@@ -5,7 +5,7 @@ const Card = ({ item, selected }) => {
     return (
         <>
             <motion.div className='card' layoutId={item.id}>
-                <motion.div layoutId={item.name}>{item.name}</motion.div>
+                <motion.h4 layoutId={item.name}>{item.name}</motion.h4>
                 <motion.img layoutId={item.img} src={item.img} alt={item.alt} />
             </motion.div>
             <AnimatePresence>

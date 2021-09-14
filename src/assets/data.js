@@ -8,7 +8,7 @@ import reactLogo from './react-logo.png'
 import reduxLogo from './redux-logo.png'
 import pythonLogo from './python_logo.png'
 
-const stackData = [
+export const stackData = [
     {
         id: 1,
         name: 'Ruby',
@@ -74,4 +74,35 @@ const stackData = [
     }
 ]
 
-export default stackData
+export const proficiencyData = [
+    {
+        proficiency: 'Object Oriented Programming'
+    },
+    {
+        proficiency: 'SQL & Relational Databases'
+    },
+    {
+        proficiency: "Authentication (Rails, JWT's, OAuth)"
+    },
+    {
+        proficiency: 'Single Page Applications'
+    },
+    {
+        proficiency: 'MVC Frameworks'
+    },
+    {
+        proficiency: 'RESTFUL Applications'
+    },
+    {
+        proficiency: "API's"
+    },
+    {
+        proficiency: 'JSON'
+    },
+    {
+        proficiency: 'Git'
+    },
+    {
+        proficiency: 'Thunk'
+    }
+]

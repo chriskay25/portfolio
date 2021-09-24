@@ -225,11 +225,16 @@ li {
 
 .proficiencies h2 {
     font-size: clamp(17px, 2.2vw, 1.4rem);
-    /* color: var(--grey); */
+    color: var(--red);
 }
 
 .proficiencies ul {
     color: var(--grey);
+}
+
+.proficiencies li:hover {
+    color: white;
+    font-size: 1.1rem;
 }
 
 /* EXPERIENCE */
@@ -314,11 +319,15 @@ li {
     color: var(--grey);
     border-radius: 5px;
     box-shadow: 4px 4px 5px black;
-
 }
 
 .project-description p {
     padding: 5px 0;
+    color: rgb(240, 232, 232);
+}
+
+.project-description p:last-child {
+    color: var(--grey);
 }
 
 .project-example {

@@ -9,7 +9,7 @@ import ghLogo from '../assets/gh-light-sm.png'
 const Projects = () => {
     return (
         <div className='projects-container'>
-            <h2 className='projects-header'>Personal Projects</h2>
+            <h2 className='projects-header'>PERSONAL PROJECTS</h2>
             <div className='projects'>
                 <div className='project'>
                     <Column>
@@ -17,8 +17,8 @@ const Projects = () => {
                             <h3>React Game</h3>
                             <img className='project-gh' src={ghLogo} alt='github-logo' onClick={() => window.location.href = 'https://github.com/chriskay25/juke'} />
                             <div className='project-description'>
-                                <p><b>Frontend:</b> React</p>
-                                <p><b>Backend:</b> Ruby on Rails</p>
+                                <p><b>FRONTEND:</b> React</p>
+                                <p><b>BACKEND:</b> Ruby on Rails</p>
                                 <p>
                                     This is a game built using mostly pure React and state management for frontend operations. 
                                     High scores are saved to user accounts on the backend.
@@ -38,8 +38,8 @@ const Projects = () => {
                             <h3>Flashcards</h3>
                             <img className='project-gh' src={ghLogo} alt='github-logo' onClick={() => window.location.href = 'https://github.com/chriskay25/react-flashcards'} />
                             <div className='project-description'>
-                                <p><b>Frontend:</b> Currently uses React. Originally built using pure Javascript</p>
-                                <p><b>Backend:</b> Ruby on Rails</p>
+                                <p><b>FRONTEND:</b> React. Originally built using pure JS</p>
+                                <p><b>BACKEND:</b> Ruby on Rails</p>
                                 <p>
                                     A web app that allows users to create their own flashcard decks which they can 
                                     use to study and quiz themselves.
@@ -59,8 +59,8 @@ const Projects = () => {
                             <h3>Notepod</h3>
                             <img className='project-gh' src={ghLogo} alt='github-logo' onClick={() => window.location.href = 'https://github.com/chriskay25/notepod'} />
                             <div className='project-description'>
-                                <p><b>Frontend:</b> Embedded Ruby (ERB), and CSS</p>
-                                <p><b>Backend:</b> Ruby on Rails</p>
+                                <p><b>FRONTEND:</b> Embedded Ruby (ERB) & CSS</p>
+                                <p><b>BACKEND:</b> Ruby on Rails</p>
                                 <p>
                                     Web app created to allow users to make and share notes about their favorite podcast episodes.
                                 </p>
@@ -79,8 +79,8 @@ const Projects = () => {
                             <h3>Bucket List</h3>
                             <img className='project-gh' src={ghLogo} alt='github-logo' onClick={() => window.location.href = 'https://github.com/chriskay25/bucket_list'} />
                             <div className='project-description'>
-                                <p><b>Frontend:</b> Embedded Ruby (ERB) & CSS</p>
-                                <p><b>Backend:</b> Sinatra</p>
+                                <p><b>FRONTEND:</b> Embedded Ruby (ERB) & CSS</p>
+                                <p><b>BACKEND:</b> Sinatra</p>
                                 <p>
                                     A web app that lets users track and remember travel destinations that are on their bucket list.
                                 </p>
@@ -100,8 +100,8 @@ const Projects = () => {
                             <img className='project-gh' src={ghLogo} alt='github-logo' onClick={() => window.location.href = 'https://github.com/chriskay25/cheers'} />
                             <div className='project-description'>
                                 <p>
-                                    This is a project that uses a CLI interface and scrapes the web
-                                    to provide users information about Atlanta breweries.
+                                    This is a project that scrapes the web for information about breweries in the Atlanta area. 
+                                    Users can interact with the app through a Command Line Interface.
                                 </p>
                             </div>
                         </div>

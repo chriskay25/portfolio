@@ -14,21 +14,15 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 55s ease infinite;
+    background: 
+    radial-gradient(ellipse at center, #18395e 0%, #000105 50%, #18395e 100%) center no-repeat;
+    /* radial-gradient(ellipse at center, #5091DD 0%, #030617 100%) center no-repeat, */
+    animation: bg 3s ease forwards;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+@keyframes bg {
+    0% {background-size: 100% 100%}
+    100% {background-size: 200% 200%}
 }
 
 :root {
@@ -37,6 +31,7 @@ body {
     --yellow: #eae85b;
     --lightyellow: #ffeb00;
     --red: #ea5b5d;
+    --lightred: #df9697;
     --green: #5beaa0;
     --blue: #5ba5ea;
     --grey: rgb(190, 190, 190);
@@ -70,7 +65,7 @@ li {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     background-color: var(--dark);
     margin:0 auto;
     overflow: hidden;
@@ -93,19 +88,12 @@ li {
     height: 100%;
 }
 
-.name {
-    font-family: var(--header-font);
-    font-size: 3.5rem;
-    position: relative;
-    max-width:fit-content;
-}
-
 .underline {
     height: 5px;
-    width: 80px;
     background: var(--red);
     position: relative;
     bottom: 5px;
+    border-radius: 6px;
 }
 
 .avatar {
@@ -123,6 +111,18 @@ li {
     justify-content: center;
     width: 100%;
     max-width: 600px;
+    /* border: solid white 3px; */
+}
+
+.description-container {
+    padding: 1.5rem 1.8rem 0;
+    /* box-shadow: 0px 5px 20px black; */
+    animation: rise 3s ease .5s forwards;
+}
+
+@keyframes rise {
+    from {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+    to {box-shadow: 0px 0px 5px rgb(0, 0, 0);}
 }
 
 .intro-description h2 {
@@ -396,6 +396,22 @@ text {
     width: 220px;
     height: 315px;
 }
+
+.letter {
+    stroke: #fff;
+    fill: transparent;
+    stroke-dasharray: 456.9312744140625;
+    stroke-dashoffset: 456.9312744140625;
+    animation: letters 2.6s linear .5s forwards;
+  }
+  
+  @keyframes letters {
+    0% {stroke-dashoffset: 456.9312744140625; stroke-width: .5; stroke: #0b49f5;}
+    25% { stroke-width: .6; stroke: var(--lightred);}
+    50% {stroke-width: .6; stroke: var(--red);}
+    75% { stroke-width: .6; stroke: var(--lightred);}
+    100% {stroke-dashoffset: 442; stroke-width: 1; stroke: #fff;}
+  }
 
 @media screen and (max-width: 650px) {
     .column {

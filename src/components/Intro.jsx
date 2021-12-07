@@ -30,12 +30,14 @@ const Intro = () => {
                 <Avatar />
             </Column>
             <Column>
-                <div className='intro-description'>
-                    <motion.h2 initial='initial' animate='animated' variants={item} custom='3.3'>FULL STACK DEVELOPER</motion.h2>
-                    <motion.p initial='initial' animate='animated' variants={item} custom='3.6'>
-                        Hello! My name is Chris Kay and I'm a full stack software engineer with a passion for technology.
-                        I'm interested in finding a position as a junior developer at a company where I can learn from more experienced engineers and improve and expand my skillset. 
-                    </motion.p>
+                <div className='description-container'>
+                    <div className='intro-description'>
+                        <motion.h2 initial='initial' animate='animated' variants={item} custom='3.3'>FULL STACK DEVELOPER</motion.h2>
+                        <motion.p initial='initial' animate='animated' variants={item} custom='3.6'>
+                            Hello! My name is Chris Kay and I'm a full stack software engineer with a passion for technology.
+                            I'm interested in finding a position as a junior developer at a company where I can learn from more experienced engineers and improve and expand my skillset. 
+                        </motion.p>
+                    </div>
                 </div>
             </Column>
         </div>

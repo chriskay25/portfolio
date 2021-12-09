@@ -94,7 +94,13 @@ export const proficiencyData = [
         proficiency: 'RESTFUL Applications'
     },
     {
+        proficiency: 'Test Driven Design'
+    },
+    {
         proficiency: "API's"
+    },
+    {
+        proficiency: 'Responsive Design'
     },
     {
         proficiency: 'JSON'

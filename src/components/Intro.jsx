@@ -1,7 +1,5 @@
 import Avatar from './Avatar'
-import Name from './Name'
 import Column from './Column'
-import SocialMedia from './SocialMedia'
 import { motion } from 'framer-motion'
 
 const item = {
@@ -24,9 +22,6 @@ const Intro = () => {
     return (
         <div className='intro'>
             <Column>
-                <Name />
-                <motion.div className='underline' initial={{opacity: 0, width: '0px'}} animate={{opacity: 1, width: '120px'}} transition={{delay: 2.7, duration: 1, type: 'spring', ease: 'easeInOut'}} />
-                <SocialMedia />
                 <Avatar />
             </Column>
             <Column>

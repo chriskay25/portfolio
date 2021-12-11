@@ -84,13 +84,13 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px 40px;
+    padding: 5px 40px;
     height: 100%;
     overflow: visible;
 }
 
 .name {
-    padding: 2rem;
+    padding: 2.5rem 0 0 3rem;
 }
 
 .underline {

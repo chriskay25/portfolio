@@ -75,7 +75,7 @@ li {
     width: 50%;
     color: #fff;
     padding: 20px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* INTRO */
@@ -86,6 +86,11 @@ li {
     flex-wrap: wrap;
     padding: 10px 40px;
     height: 100%;
+    overflow: visible;
+}
+
+.name {
+    padding: 2rem;
 }
 
 .underline {
@@ -101,28 +106,37 @@ li {
     justify-content: center;
     margin: 30px 0;
     object-fit: scale-down;
-    filter: drop-shadow(0px 5px 20px black);
+    filter: drop-shadow(0px 1px 1px black);
+    animation: avatar 2.5s linear 3s forwards;
 }
 
-.intro-description {
+.avatar:hover {
+    filter: drop-shadow(0px 25px 35px black);
+}
+
+@keyframes avatar {
+    from {filter: drop-shadow(0px 1px 1px black);}
+    to {filter: drop-shadow(0px 10px 5px black);}
+}
+
+.description-container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    /* border: solid white 3px; */
+    
 }
 
-.description-container {
+.intro-description {
     padding: 1.5rem 1.8rem 0;
-    /* box-shadow: 0px 5px 20px black; */
-    animation: rise 3s ease .5s forwards;
+    animation: rise 2s ease 2.2s forwards;
 }
 
 @keyframes rise {
-    from {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
-    to {box-shadow: 0px 0px 5px rgb(0, 0, 0);}
+    from {box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); background-color:rgba(0, 0, 0, 0);}
+    to {box-shadow: 0px 0px 5px rgb(0, 0, 0); background-color:rgba(0, 0, 0, 0.11);}
 }
 
 .intro-description h2 {
@@ -403,15 +417,31 @@ text {
     stroke-dasharray: 456.9312744140625;
     stroke-dashoffset: 456.9312744140625;
     animation: letters 2.6s linear .5s forwards;
-  }
-  
-  @keyframes letters {
-    0% {stroke-dashoffset: 456.9312744140625; stroke-width: .5; stroke: #0b49f5;}
-    25% { stroke-width: .6; stroke: var(--lightred);}
-    50% {stroke-width: .6; stroke: var(--red);}
-    75% { stroke-width: .6; stroke: var(--lightred);}
-    100% {stroke-dashoffset: 442; stroke-width: 1; stroke: #fff;}
-  }
+}
+
+@keyframes letters {
+  0% {stroke-dashoffset: 456.9312744140625; stroke-width: .5; stroke: #0b49f5;}
+  25% { stroke-width: .6; stroke: var(--lightred);}
+  50% {stroke-width: .6; stroke: var(--red);}
+  75% { stroke-width: .6; stroke: var(--lightred);}
+  100% {stroke-dashoffset: 442; stroke-width: 1; stroke: #fff;}
+}
+
+.letteri {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: .4;
+    stroke-dasharray: 456.9312744140625;
+    stroke-dashoffset: 456.9312744140625;
+    animation: letter-i 2.6s linear 1s forwards;
+}
+
+@keyframes letter-i {
+    0% {stroke-dashoffset: 457;}
+    50% {stroke-dashoffset: 456;}
+    75% {stroke-dashoffset: 455;}
+    100% {stroke-dashoffset: 452;}
+}
 
 @media screen and (max-width: 650px) {
     .column {

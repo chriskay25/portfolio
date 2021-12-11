@@ -13,7 +13,7 @@ const SocialMedia = () => {
     }
 
     return (
-        <motion.div className='social-media' initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: 'easeIn'}}>
+        <motion.div className='social-media' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 2.6, duration: .8, ease: 'easeIn'}}>
             <img src={liLogo} alt='linked-in-logo' onClick={() => handleLiClick} />
             <img src={ghLogo} alt='github-logo' onClick={() => handleGhClick()} />
         </motion.div>

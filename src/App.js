@@ -4,12 +4,12 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import Name from './components/Name'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
-      <Name />
+      <Header />
       <Intro />
       <Skills />
       <Experience />
